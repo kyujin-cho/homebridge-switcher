@@ -10,6 +10,7 @@
   "keywords": [
     "homebridge-plugin"
   ],
+  "readme": "README.md",
   "repository": {
     "type": "git",
     "url": "https://github.com/kyujin-cho/homebridge-switcher"
