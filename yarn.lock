@@ -1388,7 +1388,7 @@ noble@^1.9.1:
   resolved "https://registry.yarnpkg.com/noble/-/noble-1.9.1.tgz#2ccd31ead8ec92dbff6f19a42e420b258bcdcdd0"
   integrity sha1-LM0x6tjsktv/bxmkLkILJYvNzdA=
   dependencies:
-    debug "~2.2.0"
+    debug "~2.2.9"
   optionalDependencies:
     bluetooth-hci-socket "^0.5.1"
     bplist-parser "0.0.6"
