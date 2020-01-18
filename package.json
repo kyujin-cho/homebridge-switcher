@@ -1,0 +1,39 @@
+{
+  "name": "homebridge-switcher",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "config.schema.json"
+  ],
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "engines": {
+    "homebridge": ">=0.2.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "@rollup/plugin-replace": "^2.3.0",
+    "@types/noble": "^0.0.39",
+    "@types/noble-mac": "^0.0.1",
+    "babel-plugin-search-and-replace": "^1.0.1",
+    "noble-mac": "https://github.com/Timeular/noble-mac.git"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-typescript": "^7.3.3",
+    "prettier": "^1.18.2",
+    "rollup": "^1.15.4",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-node-resolve": "^5.0.2"
+  },
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  }
+}

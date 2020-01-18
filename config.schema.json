@@ -1,0 +1,27 @@
+{
+	"pluginAlias": "Switcher",
+	"pluginType": "accessory",
+	"schema": {
+		"type": "object",
+		"properties": {
+			"name": {
+				"title": "Accessory Name",
+				"type": "string",
+				"required": true,
+				"default": "My Bedroom"
+			},
+			"macAddr": {
+				"title": "Switcher MAC Address",
+				"type": "string",
+				"required": true,
+				"default": ""
+			},
+			"buttonType": {
+				"title": "Switcher Button Type (one|two)",
+				"type": "string",
+				"required": true,
+				"default": "one"
+			}
+		}
+	}
+}
