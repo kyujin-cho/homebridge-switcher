@@ -10,8 +10,8 @@
 				"required": true,
 				"default": "My Bedroom"
 			},
-			"macAddr": {
-				"title": "Switcher MAC Address",
+			"serialNo": {
+				"title": "Switcher Serial Number",
 				"type": "string",
 				"required": true,
 				"default": ""
