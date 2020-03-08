@@ -28,11 +28,15 @@ export default function(homebridge: any) {
 const connectToDevice = (serial: string): Promise<IODevice>  => {
   return new Promise((resolve, reject) => {
     noble.on('stateChange', (state) => {
+      console.log('noble ' + state)
       if (state === 'poweredOn') {
-        noble.startScanning([], false)
+        noble.startScanning([], false, (error) => {
+          console.log('Error while starting scan operation: ' + error)
+        })
       }
     })  
     noble.on('discover', (peri) => {
+      console.log(peri)
       if (peri.advertisement.localName == 'SWITCHER_M') {
         peri.connect((error) => {
           if (error) reject('periConnect: ' + error)

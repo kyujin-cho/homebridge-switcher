@@ -3,7 +3,7 @@ import resolve from "rollup-plugin-node-resolve";
 import replace from '@rollup/plugin-replace'
 import os from 'os'
 
-const noblePackage = os.platform() == 'darwin' ? 'noble-mac' : 'noble'
+const noblePackage = os.platform() == 'darwin' ? '@abandonware/noble' : '@abandonware/noble'
 
 const extensions = [".ts", ".js"];
 
